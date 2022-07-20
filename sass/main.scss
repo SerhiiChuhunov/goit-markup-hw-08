@@ -1,0 +1,23 @@
+@import './utils/variables.scss';
+@import './utils/visually-hidden';
+
+@import './base/common';
+@import './base/resets';
+
+@import './components/container';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/section';
+@import './components/section-title';
+@import './components/site-nav-contacts-addres-nav';
+@import './components/portfolio-button';
+
+@import './layout/header';
+@import './layout/section-hero';
+@import './layout/section-peculiarities';
+@import './layout/section-image';
+@import './layout/section-team';
+@import './layout/section-clients';
+@import './layout/footer';
+@import './layout/section-portfolio-button';
+@import './layout/section-portfolio-content';

@@ -1,0 +1,8 @@
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus,
+.address-nav .link:hover,
+.address-nav .link:focus {
+    color: var(--accent-color);
+}

@@ -1,0 +1,37 @@
+.peculiarities {
+    display: flex;
+
+    .item {
+        width: 270px;
+    }
+
+    .item+.item {
+        margin-left: 30px;
+    }
+
+    .title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--title-text-color);
+    }
+}
+
+.thumb {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: var(--secondary-white-color);
+    border-radius: 4px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.71;
+}

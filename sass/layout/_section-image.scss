@@ -1,0 +1,41 @@
+.image {
+    padding-top: 0;
+}
+
+.picture {
+    display: flex;
+    position: relative;
+    width: 370;
+
+    .item+.item {
+        margin-left: 30px;
+    }
+
+    &-text {
+        display: flex;
+        position: absolute;
+        padding: 27px 82px;
+        bottom: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 1);
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-text-text {
+        margin: 0;
+    }
+
+    .item::before {
+        display: inline-block;
+        position: absolute;
+        content: '';
+        width: 370px;
+        height: 70px;
+        bottom: 0;
+        background-color: rgba(47, 48, 58, 80%);
+    }
+}

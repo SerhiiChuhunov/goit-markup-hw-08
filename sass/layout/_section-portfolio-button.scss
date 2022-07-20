@@ -1,0 +1,25 @@
+.button-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .item+.item {
+        margin-left: 8px;
+    }
+}
+
+.button-potrf {
+    margin-top: 0;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: var(--title-text-color);
+    background-color: var(--secondary-white-color);
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
