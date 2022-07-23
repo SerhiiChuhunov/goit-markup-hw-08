@@ -371,8 +371,16 @@ html {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title,
@@ -688,11 +696,6 @@ html {
 .section.team {
   background-color: var(--secondary-white-color);
 }
-@media screen and (max-width: 1199px) {
-  .section.team {
-    padding-top: 0;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .work-list {
@@ -705,43 +708,6 @@ html {
     margin-top: -30px;
   }
 }
-.work-list .item {
-  background-color: var(--primary-white-color);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-@media screen and (max-width: 479px) {
-  .work-list .item {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .work-list .item {
-    width: 450px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .work-list .item + .work-list .item {
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .work-list .item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-        flex-basis: calc(50% - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .work-list .item {
-    -ms-flex-preferred-size: calc(25% - 30px);
-        flex-basis: calc(25% - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-}
 .work-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -749,6 +715,44 @@ html {
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-text-color);
+}
+
+.work-item {
+  background-color: var(--primary-white-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+@media screen and (max-width: 479px) {
+  .work-item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .work-item {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .work-item + .work-item {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .work-item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-item {
+    -ms-flex-preferred-size: calc(25% - 30px);
+        flex-basis: calc(25% - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .card-content {
@@ -796,21 +800,14 @@ html {
   line-height: 1.19;
 }
 
-@media screen and (max-width: 767px) {
-  .card {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .card:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
 .company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .company .link {
   display: -webkit-inline-box;
@@ -842,8 +839,30 @@ html {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.company .item + .item {
+.company .company-item + .company-item {
   margin-left: 30px;
+}
+.company .company-item {
+  -ms-flex-preferred-size: calc(50% - 30px);
+      flex-basis: calc(50% - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .company .company-item {
+    -ms-flex-preferred-size: calc(33.3333333333% - 30px);
+        flex-basis: calc(33.3333333333% - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company .company-item {
+    -ms-flex-preferred-size: calc(16.6666666667% - 30px);
+        flex-basis: calc(16.6666666667% - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .footer {
