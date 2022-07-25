@@ -142,6 +142,11 @@ html {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100vw - 80px);
+  }
+}
 .modal-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,13 +192,23 @@ html {
   text-align: left;
   padding: 0;
 }
+@media screen and (max-width: 479px) {
+  .form-modal {
+    width: calc(100vw - 80px);
+  }
+}
 .form-modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .form-modal-title {
+    line-height: 1.16;
+  }
 }
 
 .form-group-field {
@@ -292,8 +307,15 @@ html {
           align-items: center;
   margin-bottom: 30px;
   padding-left: 24px;
+  font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
+}
+@media screen and (max-width: 767px) {
+  .form-contract-label {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .form-contract-link {
@@ -1118,8 +1140,28 @@ html {
           justify-content: center;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 767px) {
+  .button-menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .button-menu {
+    margin-bottom: 30px;
+  }
+}
 .button-menu .item + .item {
   margin-left: 8px;
+}
+@media screen and (max-width: 767px) {
+  .button-menu .item + .item {
+    margin-bottom: 15px;
+  }
 }
 
 .button-potrf {
@@ -1166,8 +1208,6 @@ html {
   color: var(--title-text-color);
 }
 .content .item-portf {
-  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-      flex-basis: calc(33.3333333333% - 30px);
   margin-left: 30px;
   margin-top: 30px;
   background-color: var(--primary-white-color);
@@ -1178,6 +1218,24 @@ html {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .content .item-portf {
+    -ms-flex-preferred-size: calc(100% - 30px);
+        flex-basis: calc(100% - 30px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .content .item-portf {
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content .item-portf {
+    -ms-flex-preferred-size: calc(33.3333333333% - 30px);
+        flex-basis: calc(33.3333333333% - 30px);
+  }
 }
 .content .item-portf:hover, .content .item-portf:focus {
   cursor: pointer;
