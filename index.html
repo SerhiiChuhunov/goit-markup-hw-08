@@ -22,19 +22,19 @@
             class="menu-mobile-button" 
             aria-expanded="false" 
             aria-controls="menu-container" 
-            [data-menu-open]>
+            data-menu-open>
                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="icon-mobile-open" href="./images/icons.svg#menu"></use>
                 </svg>
             </button>
-            <div class="menu-container" id="menu-container" [data-menu]>
+            <div class="menu-container" id="menu-container" data-menu>
                 <div class="menu-mobie-container">
                     <button 
                     type="button" 
                     class="menu-container-button" 
                     aria-expanded="false" 
                     aria-controls="menu-container"
-                    [data-menu-close]>
+                    data-menu-close>
                         <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                             <use class="icon-mobile-close" href="./images/icons.svg#close-mobile"></use>
                         </svg>
@@ -151,19 +151,31 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="picture">
                     <li class="item">
-                        <img srcset="" src="./images/1.jpg" alt="Верстка" width="370">
+                        <img 
+                        srcset="./images/1.jpg 1x, ./images/desktop/picture/verstka370.jpg 2x" 
+                        src="./images/1.jpg" 
+                        alt="Верстка" 
+                        width="370">
                         <div class="picture-text">
                             <p class="picture-text-text">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/2.jpg" alt="Разработка моб. приложений" width="370">
+                        <img 
+                        srcset="./images/2.jpg 1x, ./images/desktop/picture/laptop370.jpg 2x"
+                        src="./images/2.jpg" 
+                        alt="Разработка моб. приложений" 
+                        width="370">
                         <div class="picture-text">
                             <p class="picture-text-text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/3.jpg" alt="Робота за ПК" width="370">
+                        <img
+                        srcset="./images/3.jpg 1x, ./images/desktop/picture/tablet370.jpg 2x" 
+                        src="./images/3.jpg" 
+                        alt="Робота за ПК" 
+                        width="370">
                         <div class="picture-text">
                             <p class="picture-text-text">Дизайнерские решения</p>
                         </div>
@@ -178,7 +190,10 @@
                     <li class="work-item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/4.jpg" alt="работник1" width="270">
+                                <img 
+                                srcset=".images/mobile/team/ProductDesigner450.jpg 1x, .images/tablet/team/ProductDesigner354.jpg 1x, ./images/4.jpg 1x, images/mobile/team/ProductDesigner450@2x.jpg 2x, .images/tablet/team/ProductDesigner354@2x.jpg 2x, .images/desktop/team/Product-Designer-270.jpg 2x"
+                                src="images/mobile/team/ProductDesigner450.jpg" 
+                                alt="работник1">
                             </div>
                             <div class="card-content">
                                 <h3 class="title">Игорь Демьяненко</h3>
@@ -219,7 +234,10 @@
                     <li class="work-item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/5.jpg" alt="работник2" width="270">
+                                <img 
+                                srcset=".images/mobile/team/FrontendDeveloper450.jpg 1x, .images/tablet/team/FrontendDeveloper354.jpg 1x, ./images/5.jpg 1x, images/mobile/team/FrontendDeveloper450@2x.jpg 2x, .images/tablet/team/FrontendDeveloper354@2x.jpg 2x, .images/desktop/team/Frontend-Developer-270.jpg 2x"
+                                src=".images/mobile/team/FrontendDeveloper450.jpg" 
+                                alt="работник2">
                             </div>
                             <div class="card-content">
                                 <h3 class="title">Ольга Репина</h3>
@@ -260,7 +278,10 @@
                     <li class="work-item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/6.jpg" alt="работник3" width="270">
+                                <img 
+                                srcset=".images/mobile/team/Marketing450.jpg 1x, .images/tablet/team/Marketing354.jpg 1x, ./images/6.jpg 1x, images/mobile/team/Marketing450@2x.jpg 2x, .images/tablet/team/Marketing354@2x.jpg 2x, .images/desktop/team/Marketing-270.jpg 2x"
+                                src=".images/mobile/team/Marketing450.jpg" 
+                                alt="работник3">
                             </div>
                             <div class="card-content">
                                 <h3 class="title">Николай Тарасов</h3>
@@ -301,7 +322,10 @@
                     <li class="work-item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/7.jpg" alt="работник4" width="270">
+                                <img 
+                                srcset=".images/mobile/team/Designer450.jpg 1x, .images/tablet/team/Designer354.jpg 1x, ./images/7.jpg 1x, images/mobile/team/Designer450@2x.jpg 2x, .images/tablet/team/Designer354@2x.jpg 2x, .images/desktop/team/UI-Designer-270.jpg 2x"
+                                src=".images/mobile/team/Designer450.jpg" 
+                                alt="работник4">
                             </div>
                             <div class="card-content">
                                 <h3 class="title">Михаил Ермаков</h3>
