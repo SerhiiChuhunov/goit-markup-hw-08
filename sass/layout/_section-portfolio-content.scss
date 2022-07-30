@@ -58,23 +58,23 @@
     opacity: 1;
 }
 
-.card-thumb:hover::before,
-.card-thumb:focus::before {
-    opacity: 1;
-}
+// .card-thumb:hover::before,
+// .card-thumb:focus::before {
+//     opacity: 1;
+// }
 
 .card-thumb {
     position: relative;
     overflow: hidden;
 
-    &::before {
-        display: inline-block;
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-    }
+    // &::before {
+    //     display: inline-block;
+    //     position: absolute;
+    //     content: '';
+    //     width: 100%;
+    //     height: 100%;
+    //     opacity: 0;
+    // }
 }
 
 .card-portf:hover .content-text,

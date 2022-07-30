@@ -392,7 +392,6 @@ html {
 }
 
 .section {
-  max-width: 1600px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -496,10 +495,7 @@ html {
   .menu-mobie-container {
     position: relative;
     width: 480px;
-    padding-top: 48px;
-    padding-right: 83px;
-    padding-bottom: 48px;
-    padding-left: 40px;
+    padding: 48px 40px;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -834,6 +830,10 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -10px;
+    top: -10px;
   }
 }
 
@@ -929,7 +929,6 @@ html {
   }
 }
 .hero-title {
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -1226,7 +1225,7 @@ html {
   display: inline-flex;
   border: 1px solid var(--icons-primary-color);
   border-radius: 4px;
-  width: 170px;
+  width: 100%;
   height: 92px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1291,6 +1290,8 @@ html {
         -ms-flex-align: baseline;
             align-items: baseline;
     margin-bottom: 60px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
@@ -1318,7 +1319,6 @@ html {
     width: 354px;
     margin-bottom: 0;
     max-width: 354px;
-    margin-right: 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1362,15 +1362,11 @@ html {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-container {
-  margin-bottom: 60px;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     width: 354px;
     margin-bottom: 0;
     max-width: 354px;
-    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1460,7 +1456,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 450px;
+  width: 450px;
   height: 50px;
   padding: 0;
   padding-left: 16px;
@@ -1470,6 +1466,11 @@ html {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+@media screen and (max-width: 479px) {
+  .input-subscription {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1199px) {
   .input-subscription {
@@ -1641,22 +1642,9 @@ html {
   opacity: 1;
 }
 
-.card-thumb:hover::before,
-.card-thumb:focus::before {
-  opacity: 1;
-}
-
 .card-thumb {
   position: relative;
   overflow: hidden;
-}
-.card-thumb::before {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  opacity: 0;
 }
 
 .card-portf:hover .content-text,
