@@ -1479,7 +1479,7 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .input-subscription {
-    min-width: 358px;
+    width: 358px;
     margin-right: 12px;
   }
 }
