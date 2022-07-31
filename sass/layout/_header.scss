@@ -284,6 +284,10 @@
     line-height: 1.17;
     color: var(--accent-color);
 
+    @media screen and (max-width:479px) {
+        font-size: 27px;
+    }
+
     @media screen and (min-width:768px) {
         display: flex;
         align-items: center;
